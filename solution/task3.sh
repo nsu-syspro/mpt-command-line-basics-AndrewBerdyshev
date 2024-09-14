@@ -1,1 +1,2 @@
-find . -type f -name "*.txt" | sort | xargs -n 1 basename
+find . -type f -name "*.txt" -exec basename {} \; | sort -V
+
